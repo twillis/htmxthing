@@ -1,0 +1,15 @@
+
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="column">
+    <form action="{{url}}" method="post">
+        <input name="came_from" type="hidden" value="{{came_from}}"/>
+        <input name="email" type="text" value="{{email}}"/>
+        <label for="email">Email</label>
+        <input name="password" type="password" value="{{password}}"/>
+        <label for="password">Password</label>
+        <input name="form.submitted" type="submit" value="Login"/>
+    </form>
+</div>
+{% endblock content %}
